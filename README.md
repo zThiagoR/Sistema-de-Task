@@ -2,14 +2,14 @@
 
 Iniciando novo projeto prático de API para aprender a usar o TypeORM e PostgreSQL.
 
-##### Tecnologias usados durante no projeto:
+### Tecnologias usados durante no projeto:
  - TypeScript
  - TypeORM
  - DBeaver (Ferramenta de administrar o banco de dados) 
  - Insomnia (Ferramenta Client API REST)
 
 
-##### Ajustes e melhorias
+### Ajustes e melhorias
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
