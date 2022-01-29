@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "sourceMap": true,
+      "outDir": "dist/src",
+      "strict": true,
+      "lib": ["DOM", "ESNext"],
+      "esModuleInterop": true,
+      "target": "ES2019",
+      "moduleResolution": "Node",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "strictPropertyInitialization": false, // TODO: remove this
+      "module": "CommonJS"
+    },
+ }
