@@ -22,6 +22,21 @@ class TasksController {
         const task = await getRepository(Tasks).findOne(id);
         return res.json(task);
     }
+
+    async Update(req: Request, res: Response) {
+        const { id } = req.params;
+        const { title, description } = req.body;
+
+        const task = await getRepository(Tasks).update(id, { title, description });
+
+        if(task.affected === 1) {
+            const taskUpdated = await getRepository(Tasks).findOne(id);
+            return res.json(taskUpdated);
+        }
+
+        return res.status(404).json({ message: 'Task not found' });
+
+    }
 }
 
-export const tasksController = new TasksController();
+export const tasksController = new TasksController(); 
