@@ -37,6 +37,20 @@ class TasksController {
         return res.status(404).json({ message: 'Task not found' });
 
     }
+
+    async finishedTask(req: Request, res: Response) {
+        const { id } = req.params;
+        const task = await getRepository(Tasks).update(id, { 
+            finished: true 
+        });     
+
+        if(task.affected === 1) {
+            const taskUpdated = await getRepository(Tasks).findOne(id);
+            return res.json(taskUpdated);
+        }
+
+        return res.status(404).json({ message: 'Task not found' });
+    }
 }
 
 export const tasksController = new TasksController(); 
