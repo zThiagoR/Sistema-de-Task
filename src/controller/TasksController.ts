@@ -20,6 +20,7 @@ class TasksController {
     async FindById(req: Request, res: Response) {
         const { id } = req.params;
         const task = await getRepository(Tasks).findOne(id);
+        
         return res.json(task);
     }
 
