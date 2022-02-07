@@ -12,7 +12,7 @@ Iniciando novo projeto prático de API para aprender a usar o TypeORM e PostgreS
 * Clone ou baixe o projeto
 * Instale as dependências com `npm i` ou `yarn install`
 * Inicie o projeto em modo de desenvolvimento com `npm run start` ou `yarn start`
-* Criar um arquivo `ormconfing.json` com as seguintes configurações:
+* Criar um arquivo `ormconfig.json` com as seguintes configurações:
 ```
 {
    "type": "postgres",
